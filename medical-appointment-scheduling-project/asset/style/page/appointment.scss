@@ -1,0 +1,65 @@
+﻿.appointment {
+    background-image: url('../../image/bg-contact.jpg');
+
+    &__topic {
+        font-weight: 700;
+        color: #00a651;
+        font-size: 2rem;
+    }
+
+    &__line {
+        border: 1px solid #00a651;
+    }
+
+    &__note-list {
+        margin: 0;
+        padding-left: 15px;
+    }
+
+    &__note-item {
+        padding: 20px 0;
+        line-height: 1.5rem;
+        text-align: justify;
+        &::marker {
+            color: #00a651;
+        }
+    }
+
+    &__form {
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    &__form-main {
+        .form-control {
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            padding: 15px 10px;
+            border-radius: 7px;
+            background: #fbfbfb;
+        }
+    }
+
+    &__form-title {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 15px;
+        color: #00a651;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__form-btn {
+        display: block;
+        margin: 20px auto;
+        background-color: #028e46;
+        color: #fff;
+        outline: none;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 22px;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,260 @@
+﻿@model medical_appointment_scheduling_project.Models.Appointment
+
+@{
+    ViewBag.Title = "Cập nhập lịch khám";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+<div class="mb-4">
+    @Html.ActionLink("Quay lại", "ScheduleManagement")
+</div>
+
+<form method="post" action="/Admin/UpdateExaminationSchedule">
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="form-horizontal">
+        <h4>Cập nhập lịch khám</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrdinalCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OrdinalCode, new
+                {
+                    htmlAttributes = new
+                    {
+                        @class = "form-control ",
+                        disabled = "",
+                        type = "number"
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.OrdinalCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FullName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(model => model.ClinicAddress.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ClinicAddressId,
+                new SelectList(ViewBag.dbClinicAddresses, "Id", "Address"),
+                "Chọn địa chỉ phòng khám", new { @class = "form-control", id = "clinicAddressDropdown" })
+            </div>
+        </div>
+        <div class="mb-3">
+            @Html.LabelFor(model => model.Specialization.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.SpecializationId,
+                new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"),
+                "Chọn chuyên khoa", new { @class = "form-control", id = "specializationDropdown" })
+            </div>
+        </div>
+
+        <div class="mb-3">
+            @Html.LabelFor(model => model.Doctor.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.DoctorId,
+                new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"),
+                "Chọn bác sĩ", new { @class = "form-control", id = "doctorDropdown" })
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.Syndrome, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Syndrome, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+
+            @Html.ValidationMessageFor(model => model.Syndrome, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group mt-3">
+            <label>Chọn tài khoản</label>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.AdminId,
+                 new SelectList(ViewBag.user, "Id", "Username"),
+                 "Chọn tài khoản", new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.BookingDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.BookingDate, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+                @Html.ValidationMessageFor(model => model.CreatedAt, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <br />
+            <div class="col-md-10">
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Status, "0") Chờ xác nhận
+                </label>
+                <br />
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Status, "1") Đã xác nhận
+                </label>
+                <br />
+
+                <label class="radio-inline">
+                    @Html.RadioButtonFor(model => model.Status, "2") Hoàn thành
+                </label>
+                <br />
+                @Html.ValidationMessageFor(model => model.AdminId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cập nhập" class="btn btn-default btn-save" />
+            </div>
+        </div>
+    </div>
+
+
+</form>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#Syndrome').summernote({
+            tabsize: 2,
+            height: 150,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video', 'elfinder']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+            callbacks: {
+                onImageLinkInsert: function (url) {
+                    $('#Syndrome').summernote('editor.insertImage', url);
+                }
+            }
+        });
+
+        $('#Syndrome').on('summernote.enter', function () {
+            $('button[aria-label="elfinder"]').click(function () {
+                $('#Syndrome').summernote('invokePlugin', 'elfinder');
+            });
+        });
+
+        $(document).on('summernote.dialog.open', function (event) {
+            if (event.target.classList.contains('note-image-dialog')) {
+                event.preventDefault();
+            }
+        });
+    });
+    $(document).ready(function () {
+        $("#clinicAddressDropdown").change(function () {
+            var clinicAddressId = $(this).val();
+
+            axios.get(`/api/GetSpecializations?clinicAddressId=${clinicAddressId}`)
+                .then(function (response) {
+                    var specializations = response.data;
+
+                    var dropdown = $("#specializationDropdown");
+                    dropdown.empty();
+                    var defaultText = 'Chọn chuyên khoa';
+                    dropdown.append('<option value="">' + defaultText + '</option>');
+
+                    if (specializations.length > 0) {
+                        $.each(specializations, function (index, item) {
+                            dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+                        });
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching Specializations:', error);
+                });
+        });
+
+        $("#specializationDropdown").change(function () {
+            var specializationId = $(this).val();
+
+            axios.get(`/api/GetDoctors?specializationId=${specializationId}`)
+                .then(function (response) {
+                    var doctors = response.data;
+                    var dropdown = $("#doctorDropdown");
+                    dropdown.empty();
+                    var defaultText = 'Chọn bác sĩ';
+                    dropdown.append('<option value="">' + defaultText + '</option>');
+
+                    if (doctors.length > 0) {
+                        $.each(doctors, function (index, item) {
+                            dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+                        });
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching Doctors:', error);
+                });
+        });
+
+        var selectedOptionId = $("#clinicAddressDropdown").val();
+
+axios.get(`/api/GetSpecializations?clinicAddressId=${selectedOptionId}`)
+    .then(function (response) {
+        var specializations = response.data;
+
+        var dropdown = $("#specializationDropdown");
+        dropdown.empty();
+        var defaultText = 'Chọn chuyên khoa';
+        dropdown.append('<option value="">' + defaultText + '</option>');
+
+        if (specializations.length > 0) {
+            $.each(specializations, function (index, item) {
+                dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+            });
+        }
+        var selectedSpecializationId = @Model.SpecializationId;
+        dropdown.val(selectedSpecializationId);
+
+        // Now, initiate the second Axios call
+        var selectedOptionIds = $("#specializationDropdown").val();
+        return axios.get(`/api/GetDoctors?specializationId=${selectedOptionIds}`);
+    })
+    .then(function (response) {
+        var doctors = response.data;
+        var dropdown = $("#doctorDropdown");
+        dropdown.empty();
+        var defaultText = 'Chọn bác sĩ';
+        dropdown.append('<option value="">' + defaultText + '</option>');
+
+        if (doctors.length > 0) {
+            $.each(doctors, function (index, item) {
+                dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+            });
+        }
+        var selectedSpecializationId = @Model.SpecializationId;
+        dropdown.val(selectedSpecializationId);
+    })
+    .catch(function (error) {
+        console.error('Error:', error);
+    });
+
+    });
+
+</script>

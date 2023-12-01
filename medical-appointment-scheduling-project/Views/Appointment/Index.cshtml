@@ -1,0 +1,148 @@
+﻿@model medical_appointment_scheduling_project.Models.Appointment
+@{
+    ViewBag.Title = "Đặt lịch khám tại Bệnh viện Thu Cúc";
+    Layout = "~/Views/Layout/_Layout.cshtml";
+    var currentUserId = Session["id"] as int?;
+
+}
+
+@section Styles {
+    <link href="~/asset/style/page/appointment.min.css" rel="stylesheet" />
+}
+
+<div class="appointment">
+    <div class="container py-4">
+        <div class="row">
+            <nav style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">Đặt lịch khám</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <div class="appointment__note">
+                    <p>
+                        <h1 class="appointment__topic">
+                            Lưu ý
+                        </h1>
+                        <b class="appointment__title">
+                            Quý khách vui lòng gửi thông tin chi tiết để chúng tôi có thể sắp xếp cuộc hẹn.
+                        </b>
+                    </p>
+                    <hr class="appointment__line" />
+                    <ul class="appointment__note-list">
+                        <li class="appointment__note-item"><span>Lịch hẹn có hiệu lực sau khi được xác nhận chính thức từ Hệ thống y tế Thu Cúc.</span></li>
+                        <li class="appointment__note-item"><span>Vui lòng cung cấp thông tin chính xác để được phục vụ tốt nhất. Trong trường hợp cung cấp sai thông tin email &amp; điện thoại, việc xác nhận cuộc hẹn sẽ không hiệu lực.</span></li>
+                        <li class="appointment__note-item"><span>Quý khách sử dụng dịch vụ Đặt hẹn trực tuyến, xin vui lòng đặt trước ít nhất là 24 giờ trước khi đến khám.</span></li>
+                        <li class="appointment__note-item"><span>Trong những trường hợp khẩn cấp hoặc nghi ngờ có các triệu chứng nguy hiểm, quý khách nên ĐẾN TRỰC TIẾP hoặc trung tâm y tế gần nhất để kịp thời xử lý.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="appointment__form p-5">
+                    <h1 class="appointment__form-title mb-4">Đặt lịch khám</h1>
+                    <form action="/Appointment/Put" method="post" class="appointment__form-main d-flex flex-column justify-content-center">
+                        @Html.ValidationSummary(true)
+                        @Html.AntiForgeryToken()
+                        @if (currentUserId != null)
+                        {
+                            <input type="hidden" name="AdminId" value="@currentUserId" />
+                        }
+                        <div class="mb-3">
+                            @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control", placeholder = "Họ và tên (*)" } })
+                            @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control", type = "number", placeholder = "Số điện thoại (*)" } })
+                            @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.DropDownListFor(model => model.ClinicAddressId,
+                            new SelectList(ViewBag.dbClinicAddresses, "Id", "Address"),
+                            "Chọn địa chỉ phòng khám", new { @class = "form-control", id = "clinicAddressDropdown" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.DropDownListFor(model => model.SpecializationId,
+                                new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"),
+                                "Chọn chuyên khoa", new { @class = "form-control", id = "specializationDropdown" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.DropDownListFor(model => model.DoctorId,
+                                new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"),
+                                "Chọn bác sĩ", new { @class = "form-control", id = "doctorDropdown" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.TextAreaFor(model => model.Syndrome, new { @class = "form-control", rows = "3", placeholder = "Nhập triệu chứng (*)" })
+                            @Html.ValidationMessageFor(model => model.Syndrome, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="mb-3">
+                            @Html.LabelFor(model => model.BookingDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-12">
+                                @Html.TextBoxFor(model => model.BookingDate, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+                                @Html.ValidationMessageFor(model => model.BookingDate, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <button class="appointment__form-btn my-4" type="submit" name="submit">Đặt lịch khám</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#clinicAddressDropdown").change(function () {
+            var clinicAddressId = $(this).val();
+
+            axios.get(`/api/GetSpecializations?clinicAddressId=${clinicAddressId}`)
+                .then(function (response) {
+                    var specializations = response.data;
+
+                    var dropdown = $("#specializationDropdown");
+                    dropdown.empty();
+                    var defaultText = 'Chọn chuyên khoa';
+                    dropdown.append('<option value="">' + defaultText + '</option>');
+
+                    if (specializations.length > 0) {
+                        $.each(specializations, function (index, item) {
+                            dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+                        });
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching Specializations:', error);
+                });
+        });
+
+        $("#specializationDropdown").change(function () {
+            var specializationId = $(this).val();
+            console.log(specializationId)
+
+            axios.get(`/api/GetDoctors?specializationId=${specializationId}`)
+                .then(function (response) {
+                    var doctors = response.data;
+                    var dropdown = $("#doctorDropdown");
+                    dropdown.empty();
+                    var defaultText = 'Chọn bác sĩ';
+                    dropdown.append('<option value="">' + defaultText + '</option>');
+
+                    if (doctors.length > 0) {
+                        $.each(doctors, function (index, item) {
+                            dropdown.append($('<option></option>').val(item.Id).text(item.Name));
+                        });
+                    }
+                })
+                .catch(function (error) {
+                    console.error('Error fetching Doctors:', error);
+                });
+        });
+    });
+
+</script>

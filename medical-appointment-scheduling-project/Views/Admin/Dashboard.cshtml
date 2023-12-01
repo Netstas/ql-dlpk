@@ -1,0 +1,71 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Appointment>
+
+@{
+    ViewBag.Title = "Bảng điều khiển";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<h2>Tổng quan</h2>
+
+<h5>Bảng danh sách đặt lịch khám</h5>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdinalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </th>
+    </tr>
+
+    @foreach (var item in ViewBag.Data)
+    {
+        <tr>
+            <td>
+                @item.OrdinalCode
+            </td>
+            <td>
+                @item.FullName
+            </td>
+            <td>
+                @item.PhoneNumber
+            </td>
+            <td>
+                @item.ClinicAddress
+            </td>
+            <td>
+                @item.CreatedAt
+            </td>
+        </tr>
+    }
+
+</table>
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber > 1 ? ViewBag.Data.PageNumber - 1 : (int?)null })" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= ViewBag.Data.PageCount; i++)
+        {
+            <li class="page-item @(i == ViewBag.Data.PageNumber ? "active" : "")">
+                <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = i })">@i</a>
+            </li>
+        }
+        <li class="page-item">
+            <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber < ViewBag.Data.PageCount ? ViewBag.Data.PageNumber + 1 : (int?)null })" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,493 @@
+﻿
+@{
+    var isAuthenticated = !string.IsNullOrEmpty(Session["Name"] as string);
+    var username = isAuthenticated ? Session["Name"].ToString() : "";
+}
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="header-top-phone col-10">
+                    <nav class="nav">
+                        <ul class="header-top-phone-menu">
+                            <li class="header-top-phone-item">
+                                <strong>Câp cứu:</strong>
+                                <span class="header-top-phone-number">0901 793 122 </span>
+                                <span class="spacer"></span>
+                            </li>
+                            <li class="header-top-phone-item">
+                                <strong>Tổng đài:</strong>
+                                <span class="header-top-phone-number">0936 388 288  </span>
+                                <span class="spacer"></span>
+                            </li>
+                            <li class="header-top-phone-item">
+                                <strong>Trực sản (24/24):</strong>
+                                <span class="header-top-phone-number">0936 245 499 </span>
+                                <span class="spacer"></span>
+                            </li>
+                            <li class="header-top-phone-item">
+                                <strong>Hotline khoa Nhi:</strong>
+                                <span class="header-top-phone-number"> 0936 318 185 </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="header-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="header-center-logo">
+                        <img src="~/asset/image/logo/logo.png" class="header-center-logo-tc" />
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div class="header-center-slogan w-100 text-center">
+                        <h1 class="header-center-title">CHĂM SÓC SỨC KHOẺ TRỌN ĐỜI CHO BẠN</h1>
+                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    @if (isAuthenticated)
+                    {
+                        <div class="dropdown">
+                            <a class="text-decoration-none text-dark username-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-circle-user pe-2"></i>@username
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/info">Thông tin cá nhân</a></li>
+                                <li>
+                                    @Html.ActionLink("Đăng xuất", "Logout", "Auth", null, new { @class = "dropdown-item" })
+                                </li>
+                            </ul>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="w-100 text-end">
+                            <a class="header-center-login text-decoration-none text-dark" href="~/auth/index">Đăng nhập</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-footer">
+        <nav class="nav nav-menu justify-content-center">
+            <ul class="header-footer-menu">
+                <li><a href="/" class="header-footer-menu-link"> Trang chủ</a></li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Giới thiệu <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-sub position-absolute">
+                        <li class="header-footer-menu-chill">
+                            <a href="~/introduction" class="header-footer-menu-chill-link">
+                                Lời giới thiệu
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="~/missionvision" class="header-footer-menu-chill-link">
+                                Sứ mệnh – tầm nhìn
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Đội ngũ bác sĩ
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+
+                                Hệ thống y tế Thu Cúc TCI
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Hoạt động Bệnh viện
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                <span class="inline-block">
+                                    Văn hóa doanh nghiệp tại Thu Cúc TCI
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Thư viện hình ảnh
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Thư viện video
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Chuyên khoa <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-specialist">
+                        <li class="header-footer-menu-specialist-li d-flex">
+                            <div>
+                                <ul class="header-footer-menu-specialist-sub">
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="~/specialist/index" class="header-footer-menu-specialist-sub-link">Chuyên khoa Tim mạch</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="/specialist/respiratory" class="header-footer-menu-specialist-sub-link">Chuyên khoa Hô hấp</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Tiêu hóa</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Gan mật</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Cơ xương khớp</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Nội thần kinh</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Nội tiết</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Tiết niệu – Nam học</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa da liễu</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Tai mũi họng</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa Mắt</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chuyên khoa hậu môn – trực tràng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="header-footer-menu-specialist-sub">
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Ngoại</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa phụ sản</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Nhi</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Ung bướu Singapore</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Dinh Dưỡng</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Răng hàm mặt</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa xét nghiệm</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Thăm dò chức năng – Nội soi</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Chẩn đoán hình ảnh</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Gây mê hồi sức</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Kiểm soát – Nhiễm khuẩn</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khoa Dược</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Dịch vụ khám <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-sub position-absolute">
+                        <li class="header-footer-menu-chill">
+                            <a href="~/service/index" class="header-footer-menu-chill-link">
+                                Gói xét nghiệm tại nhà
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="/service/vaccination" class="header-footer-menu-chill-link">
+                                Dịch vụ tiêm chủng Vắc xin
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Gói khám đa khoa
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Khám sức khoẻ doanh nghiệp
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Gói thai sản tiêu chuẩn
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+
+                                Gói thai sản VIP
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Nội soi tiêu hoá không đau
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                <span class="inline-block">
+                                    Tán sỏi tiết niệu công nghệ cao
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Mổ trĩ không đau
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Khám tim mạch
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Khám Nội thần kinh
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Khám và điều trị bệnh gan
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Thẻ khám bệnh gia đình
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Hỗ trợ khách hàng <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-sub position-absolute">
+                        <li class="header-footer-menu-chill">
+                            <a href="/customersupport/index" class="header-footer-menu-chill-link">
+                                Chính sách Bảo hiểm y tế
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="/customersupport/medicalexaminationguide" class="header-footer-menu-chill-link">
+                                Hướng dẫn khám bệnh
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Săn siêu ưu đãi
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Danh mục giá dịch vụ
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Nhà hàng Bệnh viện
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Chính sách khách hàng
+                            </a>
+                        </li>
+
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                <span class="inline-block">
+                                    Chính sách bảo hiểm bảo lãnh – bảo hiểm phi nhân thọ
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Hợp tác ngân hàng
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Tin tức <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-sub position-absolute">
+                        <li class="header-footer-menu-chill">
+                            <a href="~/news" class="header-footer-menu-chill-link">
+                                Tin tức – Sự kiện
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="/news/bidding" class="header-footer-menu-chill-link">
+                                Đấu thầu
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Tin tuyển dụng
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Báo chí nói về Thu Cúc
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Thông tin môi trường
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                <span class="inline-block">
+                                    Chính sách bảo hiểm bảo lãnh – bảo hiểm phi nhân thọ
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Show ca nhạc
+                            </a>
+                        </li>
+                        <li class="header-footer-menu-chill">
+                            <a href="#" class="header-footer-menu-chill-link">
+                                Câu chuyện khách hàng
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-footer-menu-item position-relative">
+                    <a href="#" class="header-footer-menu-link"> Sống khoẻ <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="header-footer-menu-specialist live-well">
+                        <li class="header-footer-menu-specialist-li d-flex">
+                            <div>
+                                <ul class="header-footer-menu-specialist-sub">
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="~/livewell" class="header-footer-menu-specialist-sub-link">Tin tức y khoa</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="/livewell/hepatobiliarydisease" class="header-footer-menu-specialist-sub-link">Bệnh gan mật</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh hô hấp</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh thần kinh</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh tiêu hoá</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh hậu môn – trực tràng</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh trẻ em</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh phụ khoa</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh nội tiết</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khám sức khoẻ</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Tầm soát ung thư</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh nam khoa</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Vắc xin tiêm chủng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="header-footer-menu-specialist-sub">
+
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh cơ xương khớp</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Sản khoa</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh tai mũi họng</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh tiết niệu</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Răng hàm mặt</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh tim mạch</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh ung thư</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh truyền nhiễm</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Chẩn đoán hình ảnh</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Khám sức khỏe công ty</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh về mắt</a>
+                                    </li>
+                                    <li class="header-footer-menu-sub-item">
+                                        <a href="#" class="header-footer-menu-specialist-sub-link">Bệnh da liễu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/appointment" class="header-footer-menu-link order"> Đặt lịch khám</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<style>
+    .username-link {
+        max-width: 155px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+    }
+</style>

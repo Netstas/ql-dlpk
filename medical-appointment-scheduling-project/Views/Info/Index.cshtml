@@ -1,0 +1,198 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Admin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/_Layout.cshtml";
+    var currentUserId = Session["id"] as int?;
+}
+<div class="container pt-5 pb-5">
+    <h5>Thông tin cá nhân</h5>
+    <ul class="nav nav-pills mb-3 h-25" id="pills-tab" role="tablist">
+        <li class="nav-item h-25" role="presentation">
+            <button class="nav-link h-25 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Thông tin cơ bản</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link h-25" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Lịch khám</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link h-25" id="pills-tu-van-tab" data-bs-toggle="pill" data-bs-target="#pills-tu-van" type="button" role="tab" aria-controls="pills-tu-van" aria-selected="false">Lịch tư vấn</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Username)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Password)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </th>
+                </tr>
+
+                @foreach (var item in ViewBag.Admins)
+                {
+                    if (item.Id == currentUserId)
+                    {
+                        <tr>
+                            <td>
+                                @item.Username
+                            </td>
+                            <td>
+                                @item.Password
+                            </td>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        Số tự thự
+                    </th>
+                    <th>
+                        Họ và tên
+                    </th>
+                    <th>
+                        Số điện thoại
+                    </th>
+                    <th>
+                        Nơi đăng ký
+                    </th>
+                    <th>
+                        Bác sĩ
+                    </th>
+                    <th>
+                        Phòng khám
+                    </th>
+                    <th>
+                      Trạng thái
+                    </th>
+                </tr>
+
+                @foreach (var item in ViewBag.appointments)
+                {
+                    if (item.AdminId == currentUserId)
+                    {
+                        <tr>
+                            <td>
+                                @item.OrdinalCode
+                            </td>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                            <td>
+                                @item.ClinicAddress
+                            </td>
+                            <td>
+                                @item.DoctorName
+                            </td>
+                            <td>
+                                @item.Specialization
+                            </td>
+                            <td>
+                                @if (item.Status == "0")
+                                {
+                                    <span>Chờ xác nhận</span>
+                                }
+                                else if (item.Status == "1")
+                                {
+                                    <span>Đã xác nhận</span>
+                                }
+                                else if (item.Status == "2")
+                                {
+                                    <span>Hoàn thành</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+        <div class="tab-pane fade" id="pills-tu-van" role="tabpanel" aria-labelledby="pills-tu-van-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        Họ và tên
+                    </th>
+                    <th>
+                        Số điện thoại
+                    </th>
+                    <th>
+                        Nơi đăng ký
+                    </th>
+                    <th>
+                        Bác sĩ
+                    </th>
+                    <th>
+                        Phòng khám
+                    </th>
+                    <th>
+                        Trạng thái
+                    </th>
+                </tr>
+
+                @foreach (var item in ViewBag.patients)
+                {
+                    if (item.AdminId == currentUserId)
+                    {
+                        <tr>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                            <td>
+                                @item.ClinicAddress
+                            </td>
+                            <td>
+                                @item.DoctorName
+                            </td>
+                            <td>
+                                @item.Specialization
+                            </td>
+                            <td>
+                                @if (item.Status == "0")
+                                {
+                                    <span>Chờ xác nhận</span>
+                                }
+                                else if (item.Status == "1")
+                                {
+                                    <span>Đã xác nhận</span>
+                                }
+                                else if (item.Status == "2")
+                                {
+                                    <span>Hoàn thành</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .active {
+        height: 100% !important ;
+    }
+</style>

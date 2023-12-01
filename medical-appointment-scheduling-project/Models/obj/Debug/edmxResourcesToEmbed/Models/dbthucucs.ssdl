@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbthucucModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" />
+    <Property Name="AvatarImage" Type="nvarchar" MaxLength="500" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'dbthucuc.dbo.Appointments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Appointments">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="OrdinalCode" />
+      <PropertyRef Name="FullName" />
+      <PropertyRef Name="PhoneNumber" />
+      <PropertyRef Name="CreatedAt" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrdinalCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RegisterPlace" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Syndrome" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedAt" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArticleCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryGroupId" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Slug" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="ArticleCategoryId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="AvatarImage" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Quickview" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Body" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Views" Type="int" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="UpdatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Authors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="AvatarImage" Type="nvarchar" MaxLength="500" />
+    <Property Name="Slug" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Biography" Type="nvarchar" MaxLength="255" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="FieldOfExpertise" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BannerGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Banners">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BannerGroupId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="ImageUrl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DisplayOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="CategoryGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK_ArticleCategories_CategoryGroups">
+    <End Role="CategoryGroups" Type="Self.CategoryGroups" Multiplicity="0..1" />
+    <End Role="ArticleCategories" Type="Self.ArticleCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoryGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ArticleCategories">
+        <PropertyRef Name="CategoryGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Articles_ArticleCategories">
+    <End Role="ArticleCategories" Type="Self.ArticleCategories" Multiplicity="1" />
+    <End Role="Articles" Type="Self.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticleCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="ArticleCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Articles_Authors">
+    <End Role="Authors" Type="Self.Authors" Multiplicity="1" />
+    <End Role="Articles" Type="Self.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Banners_BannerGroups">
+    <End Role="BannerGroups" Type="Self.BannerGroups" Multiplicity="1" />
+    <End Role="Banners" Type="Self.Banners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BannerGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Banners">
+        <PropertyRef Name="BannerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbthucucModelStoreContainer">
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ArticleCategories" EntityType="Self.ArticleCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Articles" EntityType="Self.Articles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BannerGroups" EntityType="Self.BannerGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Banners" EntityType="Self.Banners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryGroups" EntityType="Self.CategoryGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Appointments" EntityType="Self.Appointments" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Appointments].[Id] AS [Id], 
+    [Appointments].[OrdinalCode] AS [OrdinalCode], 
+    [Appointments].[FullName] AS [FullName], 
+    [Appointments].[PhoneNumber] AS [PhoneNumber], 
+    [Appointments].[RegisterPlace] AS [RegisterPlace], 
+    [Appointments].[Email] AS [Email], 
+    [Appointments].[Syndrome] AS [Syndrome], 
+    [Appointments].[CreatedAt] AS [CreatedAt]
+    FROM [dbo].[Appointments] AS [Appointments]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_ArticleCategories_CategoryGroups" Association="Self.FK_ArticleCategories_CategoryGroups">
+      <End Role="CategoryGroups" EntitySet="CategoryGroups" />
+      <End Role="ArticleCategories" EntitySet="ArticleCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Articles_ArticleCategories" Association="Self.FK_Articles_ArticleCategories">
+      <End Role="ArticleCategories" EntitySet="ArticleCategories" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Articles_Authors" Association="Self.FK_Articles_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Banners_BannerGroups" Association="Self.FK_Banners_BannerGroups">
+      <End Role="BannerGroups" EntitySet="BannerGroups" />
+      <End Role="Banners" EntitySet="Banners" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

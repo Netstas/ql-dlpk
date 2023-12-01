@@ -1,0 +1,242 @@
+﻿.footer {
+    background: linear-gradient(to top,#efefef,#efefef);
+    padding: 0 150px;
+    padding-top: 50px;
+
+    &-logo {
+        margin-bottom: 32px;
+
+        &-img {
+            width: 240px;
+            object-fit: cover;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #555;
+        margin: 12px 0;
+        font-weight: 700;
+    }
+
+    &-content {
+        margin: 4px 0;
+        font-size: 16px;
+    }
+
+    &-social-network-link-group {
+        gap: 25px;
+    }
+
+    &-social-network-link-single {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #006632;
+        color: #fff;
+        transition: linear .3s;
+        cursor: pointer;
+
+        &:hover {
+            background: #f58220
+        }
+    }
+
+    &-rules {
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            color: #006632
+        }
+    }
+
+    &-titles {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #006632;
+        margin: 12px 0;
+        font-weight: 700;
+    }
+
+    &-contact-title {
+        margin: 4px 0;
+        font-size: 16px;
+    }
+
+    &-work-time-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-link {
+        margin: 4px 0;
+        font-size: 18px;
+        color: #006632;
+        padding: 4px 0;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &-link-adress {
+        color: #006632;
+        padding: 8px 0;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    &-address {
+        padding: 3px 0;
+    }
+
+    &-copyright {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
+        padding: 8px 4px;
+        background: #006632;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.dashed {
+    border-bottom: 1px dashed #000;
+    margin: 35px 0px;
+}
+
+.box {
+    padding: 0 36px;
+}
+.quick_contact {
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: flex-end;
+    z-index: 9999999;
+
+    &_left, &_right {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+
+    &_number_phone {
+        background: #b11112;
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 6px 12px 8px;
+        border-radius: 4px;
+        box-shadow: inset 0 -10px 0 -6px rgba(0,0,0,.17);
+    }
+
+    &_mail {
+      
+    }
+
+    &_title {
+        background: #ff6700;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    &_group {
+        padding: 25px 25px;
+        word-wrap: break-word;
+        font-size: 14px;
+        overflow-y: scroll;
+        height: 340px;
+
+        & p {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+    }
+}
+.calendar_order {
+    background: #0056ad;
+    & a{
+        color:#fff;
+        text-decoration:none;
+    }
+}
+label.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c5c5c;
+}
+.italic-placeholder::placeholder {
+    font-style: italic;
+}
+
+.input-style {
+    font-style: normal;
+    font-size: 12px;
+    width: 100%;
+    padding: 4px 5px;
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none;
+}
+.select {
+    font-size: 14px;
+    width: 100%;
+    padding: 4px 5px;
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none;
+}
+.send {
+    position:relative;
+    height: 46px;
+    margin-top: -18px;
+    background: #fff;
+    padding-top: 12px;
+    border-top:1px solid #ccc;
+    z-index:1;
+}
+button.btn-send {
+    width: 229px;
+    border: none;
+    outline: none;
+    background: rgb(255, 103, 0);
+    color: #fff;
+    border-radius: 5px;
+}
+.minus{
+    cursor:pointer;
+}
+.form {
+    background: #fff;
+    width: 370px;
+    height: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.active {
+    height: 400px;
+}
+.active-icon{
+    display:none;
+}

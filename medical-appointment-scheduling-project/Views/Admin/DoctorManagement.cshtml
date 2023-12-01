@@ -1,0 +1,50 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Doctor>
+
+@{
+    ViewBag.Title = "Quản lý bác sĩ";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Thêm mới bác sĩ", "CreateDoctor")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Specialization.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in ViewBag.Data)
+    {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Phone
+            </td>
+            <td>
+                @item.Specialization.Name
+            </td>
+            <td>
+                @item.ClinicAddress.Address
+            </td>
+            <td>
+                @Html.ActionLink("Cập nhập", "EditDoctor", new { id = item.Id }) |
+                @Html.ActionLink("Xoá", "DeleteDoctor", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

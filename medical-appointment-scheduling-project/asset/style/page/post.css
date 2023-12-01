@@ -1,0 +1,228 @@
+﻿.blog-post a {
+  color: #006632;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.blog-post a:hover {
+  color: #f58220;
+  transition: 0.2s ease;
+}
+.blog-post__content, .blog-post__quickview {
+  text-align: justify;
+}
+.blog-post__content a, .blog-post__quickview a {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.5);
+}
+.blog-post__quickview {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.blog-post__content p {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.blog-post__title {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 24px;
+}
+.blog-post__meta {
+  font-size: 15px;
+  color: #555;
+  padding-bottom: 12px;
+  margin: 12px 0;
+  border-bottom: 1px solid #006632;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blog-post__meta p {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.widget-question {
+  background: #f7f7f7;
+  border: 1px solid #f58220;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+.widget-question > h3 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #006632;
+  padding: 0;
+  margin: 0;
+}
+.widget-question > hr {
+  margin-right: auto;
+  margin-left: 0;
+  width: 130px;
+  border: 1px solid #006632;
+}
+.widget-question__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.widget-question__item {
+  counter-increment: my-awesome-counter;
+  padding: 0 0 5px;
+}
+.widget-question__item:before {
+  display: inline-block;
+  float: left;
+  content: counter(my-awesome-counter);
+  background: #f58220;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+.widget-question__item h3 {
+  font-size: 15px;
+  margin-top: 0;
+  padding: 0 0 10px !important;
+}
+.widget-question__link {
+  color: #333;
+  font-weight: 400;
+  line-height: 1.3;
+  text-decoration: none;
+}
+.widget-question__link:hover {
+  color: #006632;
+}
+
+.widget-news {
+  background: #f7f7f7;
+  border: 1px solid #f58220;
+  margin-top: 20px;
+  padding: 20px 10px;
+}
+.widget-news > h3 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #006632;
+  padding: 0;
+  margin: 0;
+}
+.widget-news > hr {
+  margin-right: auto;
+  margin-left: 0;
+  width: 130px;
+  border: 1px solid #006632;
+}
+.widget-news__list {
+  display: block;
+  margin-top: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.widget-news__item {
+  height: 120px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.widget-news__thumb {
+  width: 110px !important;
+  float: left;
+}
+.widget-news__thumb a {
+  padding-bottom: 65%;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+.widget-news__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.widget-news__text {
+  width: calc(100% - 110px - 12px);
+  float: right;
+}
+.widget-news__title {
+  -webkit-line-clamp: 3;
+  font-size: 16px;
+  max-height: 63px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.widget-news__title a {
+  color: #333;
+  text-decoration: none;
+}
+.widget-news__text-excerpt {
+  float: left;
+  padding: 10px 0;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.form-register {
+  border: 1px solid #006632;
+  padding: 20px 10px 0;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.form-register__title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #006632;
+}
+.form-register p {
+  text-align: center;
+  display: block;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+.form-register__form-main .form-control {
+  border: 1px solid #006632;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.form-register__form-btn {
+  background: #006632;
+  color: #fff;
+  text-transform: uppercase;
+  width: 195px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.ClinicAddress>
+
+@{
+    ViewBag.Title = "Quản lý địa chỉ phòng khám";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Thêm phòng khám mới", "CreateClinicAddress")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>Tính năng</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Data)
+    {
+        int counter = 1;
+        <tr>
+            <td>
+                @counter
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                @item.Phone
+            </td>
+            <td>
+                @Html.ActionLink("Cập nhập", "EditClinicAddress", new { id = item.Id }) |
+                @Html.ActionLink("Xoá", "DeleteClinicAddresss", new { id = item.Id })
+            </td>
+        </tr>
+        counter++;
+    }
+
+</table>

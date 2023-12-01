@@ -1,0 +1,39 @@
+﻿@model medical_appointment_scheduling_project.Models.ClinicAddress
+
+@{
+    ViewBag.Title = "Thêm địa chỉ mới";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+<div class="mb-5">
+    @Html.ActionLink("Quay lại", "ClinicAddressManagement")
+</div>
+<h5>Thêm địa chỉ mới</h5>
+@using (Html.BeginForm("CreateClinicAddresss","Admin",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Thêm mới" class="btn btn-default btn-save" />
+        </div>
+    </div>
+</div>
+}

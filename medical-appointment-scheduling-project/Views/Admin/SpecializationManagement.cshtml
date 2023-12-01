@@ -1,0 +1,37 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Specialization>
+@{
+    ViewBag.Title = "Quản lý lịch khám";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Thêm mới chuyên khoa", "CreateSpecialization")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>Tính năng</th>
+    </tr>
+
+    @foreach (var item in ViewBag.Data)
+    {
+        <tr>
+            <td>
+                @item.ClinicAddress.Address
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @Html.ActionLink("Cập nhập", "EditSpecialization", new { id = item.Id }) |
+                @Html.ActionLink("Xoá", "DeleteSpecializations", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

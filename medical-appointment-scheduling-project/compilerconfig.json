@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "asset/style/layout/header/header.css",
+    "inputFile": "asset/style/layout/header/header.scss"
+  },
+  {
+    "outputFile": "asset/style/main.css",
+    "inputFile": "asset/style/main.scss"
+  },
+  {
+    "outputFile": "asset/style/layout/footer/footer.css",
+    "inputFile": "asset/style/layout/footer/footer.scss"
+  }
+]

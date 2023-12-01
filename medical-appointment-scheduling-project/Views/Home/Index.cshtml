@@ -1,0 +1,521 @@
+﻿@{
+    ViewBag.Title = "Bệnh viện đa khoa quốc tế";
+    Layout = "~/Views/Layout/_Layout.cshtml";
+}
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+@if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+{
+    <script>
+        alert('@Html.Raw(ViewBag.SuccessMessage)');
+    </script>
+}
+
+<div id="home" class="home">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="center">
+                    <div class="card">
+                        <img src="~/asset/image/banner/1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/2.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/3.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/4.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/5.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/6.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/7.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/8.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/9.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/10.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/11.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/banner-huong-dan-tai-app-tci-hospital.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/banner-noi-than-kinh-t1122.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/catamidan.t5.home_.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/giai-chay-thang-8-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/mo-tri-home-1.2023.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/NSOM.home_.t5.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-kham-rhm-t8-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-kham-suc-khoe-doanh-nghiep-t6-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-kham-tim-mach-t6-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-mo-mat-phaco-t7-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-noi-soi-tieu-hoa-t8-23-1920x500-1.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/uu-dai-tan-soi-t8-23-1920x500-1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+
+        <div class="container">
+            <div class="row">
+                <h1 class="service-title">DỊCH VỤ NỔI BẬT</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="center-slider">
+                    <div>
+                        <div class="service-box position-relative">
+                            <a href="#" class="service-link-img">
+                                <img src="~/asset/image/service/home13_2_4.jpg" />
+                            </a>
+                            <div class="service-item">
+                                <div class="service-item-img">
+                                    <img src="~/asset/icon/iocn-service.svg" class="service-item-img-icon" />
+                                </div>
+                                <h2 class="service-item-title">thai sản trọn gói</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="service-box position-relative">
+                            <a href="#" class="service-link-img">
+                                <img src="~/asset/image/service/home13_2_2.jpg" />
+                            </a>
+                            <div class="service-item">
+                                <div class="service-item-img">
+                                    <img src="~/asset/icon/iocn-service.svg" class="service-item-img-icon" />
+                                </div>
+                                <h2 class="service-item-title">Gói khám đa khoa</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="service-box position-relative">
+                            <a href="#" class="service-link-img">
+                                <img src="~/asset/image/service/home13_2_1.jpg" />
+                            </a>
+                            <div class="service-item">
+                                <div class="service-item-img">
+                                    <img src="~/asset/icon/iocn-service.svg" class="service-item-img-icon" />
+                                </div>
+                                <h2 class="service-item-title">Khám sức khỏe doanh nghiệp</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="service-box position-relative">
+                            <a href="#" class="service-link-img">
+                                <img src="~/asset/image/service/home13_2_3.jpg" />
+                            </a>
+                            <div class="service-item">
+                                <div class="service-item-img">
+                                    <img src="~/asset/icon/iocn-service.svg" class="service-item-img-icon" />
+                                </div>
+                                <h2 class="service-item-title">Khám chữa bệnh</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="container">
+            <div class="row">
+                <h1 class="service-title">ĐỘI NGŨ BÁC SĨ</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="page">
+                    <div class="container">
+
+                        <div class="row flex-column">
+                            <div class="slider slider-for">
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/bac-ha1.jpg" class="thumb-imgs" />
+                                        <div class="text">
+                                            <div class="text__h4">Bác sĩ CKII</div>
+                                            <h3 class="text__title">
+                                                <a href="#" target="_blank">Nguyễn Văn Hà</a>
+                                            </h3>
+                                            <div class="text__h5">Phó Giám đốc Bệnh viện ĐKQT Thu Cúc TCI, Trưởng khoa Phụ Sản</div>
+                                            <div class="text__p">
+                                                <p>
+                                                    Bác sĩ CKII Nguyễn Văn Hà là chuyên gia hàng đầu trong lĩnh vực sản phụ khoa:<br>
+                                                    - Nguyên phó trưởng khoa đẻ Bệnh viện Phụ sản Trung ương<br>
+                                                    - Chuyên gia Y Tế tại Cộng hoà Angola<br>
+                                                    - Bác sĩ sản phụ khoa tại Bệnh viện Phụ sản Trung ương<br>
+                                                    Có gần 40 năm kinh nghiệm trong lĩnh vực sản phụ khoa, khám, theo dõi, điều trị sản thường, sản bệnh lý, đỡ đẻ thường, đỡ đẻ khó như ngôi mông, giác hút, forxep,…<br>
+                                                    Bác sĩ Hà rất giàu kinh nghiệm trong việc phẫu thuật lấy thai, kể cả các loại mổ lấy thai khó: mổ đẻ cũ nhiều lần, mổ lấy thai trong rau cài răng lược, rau tiền đạo, rau bong non,… Thành thạo các kỹ thuật chẩn đoán, điều trị và phẫu thuật phụ khoa đặc biệt là phẫu thuật nội soi.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/BS-Nguyen-Pham-Y-Nhi-2.jpg" class="thumb-imgs" />
+                                        <div class="text"><div class="text__h4">Thầy thuốc ưu tú, Tiến sĩ, Bác sĩ</div><h3 class="text__title"><a href="https://benhvienthucuc.vn/doi-ngu-bac-si/thay-thuoc-uu-tu-tien-si-bac-si-nguyen-pham-y-nhi/" target="_blank">Nguyễn Phạm Ý Nhi</a></h3><div class="text__h5">Giám đốc Bệnh viện Đa khoa Quốc tế Thu Cúc (286 Thụy Khuê)</div><div class="text__p"><p>Thầy thuốc ưu tú, TS.BS Nguyễn Phạm Ý Nhi là một nhà chuyên môn, nhà quản lý y tế xuất sắc. TS.BS Nguyễn Phạm Ý Nhi đã vinh dự nhận Huân chương lao động hạng ba cùng nhiều Bằng khen của Bộ trưởng Bộ y tế, Chủ tịch UBND thành phố Hà Nội trao tặng.</p><p>Là chuyên gia đầu ngành về tim mạch trẻ em, bác sĩ Ý Nhi từng giữ nhiều chức vụ quan trọng như: Giám Đốc Bệnh viện Đa khoa Xanh Pôn Hà Nội, Chủ tịch Hội Nhi khoa Hà Nội. Bên cạnh hoạt động chuyên môn, bác sĩ Ý Nhi từng là đại biểu Quốc hội, tích cực đóng góp tiếng nói của mình về các vấn đề xã hội.</p><p>Với bề dày thành tích trong công tác chuyên môn và quản lý, TS.BS Nguyễn Phạm Ý Nhi đã đồng hành và dẫn dắt Bệnh viện Đa khoa Quốc tế Thu Cúc TCI đạt được nhiều thành tựu nổi bật trên cương vị Giám đốc chuyên môn của Bệnh viện.</p><p>Bác sĩ quản lý vận hành tối ưu phương pháp hội chẩn liên chuyên khoa, chỉ đạo và định hướng phối hợp hiệu quả giữa các chuyên gia, bác sĩ, kỹ thuật viên của các khoa trong toàn bệnh viện, trong nước và quốc tế. Từ đó giúp chẩn đoán nhanh, chính xác, không bỏ lọt bệnh, điều trị trúng đích, đúng bệnh.</p></div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/BS-Nguyen-Van-Doanh-3.png" class="thumb-imgs" />
+                                        <div class="text">
+                                            <div class="text__h4">Tiến sĩ, Bác sĩ</div><h3 class="text__title"><a href="https://benhvienthucuc.vn/doi-ngu-bac-si/tien-si-y-hoc-nguyen-van-doanh-bac-si-noi-noi-than-kinh/" target="_blank">Nguyễn Văn Doanh</a></h3><div class="text__h5">Trưởng khoa Khám bệnh</div><div class="text__p">
+                                                <p>
+                                                    Tiến sĩ, Bác sĩ Nguyễn Văn Doanh có gần 40 năm kinh nghiệm trong lĩnh vực Nội thần kinh:<br>
+                                                    - Nguyên chủ nhiệm khoa thần kinh, Bệnh viện Hữu Nghị Việt Xô (Nay là bệnh viện Hữu Nghị).<br>
+                                                    - Được mệnh danh là chuyên gia "bắt trọn" mọi bệnh lý thần kinh<br>
+                                                    Tiến sĩ, Bác sĩ Nguyễn Văn Doanh có kiến thức sâu rộng trong các lĩnh vực nội khoa, nội thần kinh, từng biên soạn nhiều tài liệu về bệnh lý thần kinh nói riêng và bệnh lý nội khoa nói chung, trực tiếp điều trị nhiều ca bệnh khó giúp hàng ngàn người thoát bệnh.<br>
+                                                    Những tư vấn của Tiến sĩ, bác sĩ Doanh luôn giúp người bệnh tiết kiệm được thời gian, chi phí, mà vẫn đạt được hiệu quả điều trị tốt nhất.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/BS-Nguyen-Xuan-Thanh-4.png" class="thumb-imgs" />
+                                        <div class="text">
+                                            <div class="text__h4">
+                                                Phó giáo sư, Tiến sĩ, Thầy thuốc nhân dân
+                                            </div>
+                                            <h3 class="text__title">
+                                                <a href="#" target="_blank">
+                                                    Nguyễn Xuân Thành
+                                                </a>
+                                            </h3>
+                                            <div class="text__h5">
+                                                Bác sĩ Nội Khoa
+                                            </div>
+                                            <div class="text__p">
+                                                <p>
+                                                    Phó giáo sư, Tiến sĩ, Thầy thuốc nhân dân Nguyễn Xuân Thành cố vấn chuyên môn, bác sĩ Khoa khám bệnh - Bệnh viện Đa khoa Quốc tế Thu Cúc. Là chuyên gia đầu ngành trong lĩnh vực Gan mật:<br>
+                                                    - Nguyên là Viện trưởng viện phòng dịch Quân đội<br>
+                                                    - Giảng viên Khoa Nội truyền nhiễm Học viện quân y 103<br>
+                                                    - Tiến sĩ Y khoa Đại học Y khoa Shinmane Nhật Bản<br>
+                                                    - Hội viên Hội Gan mật, Hội siêu âm Nhật Bản<br>
+                                                    PGS. TS Nguyễn Xuân Thành có gần 30 năm kinh nghiệm làm việc tại Bệnh viện Quân Y 103 và bệnh viện Trung ương Quân đội 108. Dành nhiều thời gian nghiên cứu và trực tiếp điều trị thành công nhiều ca bệnh lý gan mật, đặc biệt là viêm gan virus, xơ gan, …
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/BS-Pham-Huy-Huyen-5.png" class="thumb-imgs" />
+                                        <div class="text">
+                                            <div class="text__h4">
+                                                Thầy Thuốc ưu tú, Bác sĩ CKII
+                                            </div>
+                                            <h3 class="text__title">
+                                                <a href="#" target="_blank">
+                                                    Phạm Huy Huyên
+                                                </a>
+                                            </h3>
+                                            <div class="text__h5">
+                                                Phó Giám đốc Bệnh viện ĐKQT Thu Cúc, Phụ trách Ngoại thận tiết niệu
+                                            </div>
+                                            <div class="text__p">
+                                                <p>Thầy thuốc ưu tú, Bác sĩ CKII Ngoại Tiết niệu - Nam học Phạm Huy Huyên là chuyên gia hàng đầu tại Việt Nam trong lĩnh vực phẫu thuật Tiết niệu – Nam học.</p><p>Bác sĩ Huyên còn được tôn vinh với danh xưng "Bàn tay vàng phẫu thuật Tiết niệu", người đã tạo được uy tín lớn trong việc áp dụng các phương pháp, kỹ thuật mới ít xâm lấn, giúp việc điều trị trở nên nhẹ nhàng hơn rất nhiều. Người bệnh được phẫu thuật nhanh chóng, ít đau và tiết kiệm thời gian, tiền bạc.</p><p>Bác sĩ Phạm Huy Huyên được đông đảo bệnh nhân tín nhiệm bởi nền tảng kinh nghiệm dày dặn với hơn 30 năm công tác chuyên môn và quản lý trong ngành.</p><p>Bên cạnh chuyên môn điều trị cho người bệnh, trong suốt quá trình công tác của mình, bác sĩ Phạm Huy Huyên đã nắm giữ nhiều chức vụ quản lý quan trọng như:</p><p>
+                                                    - Nguyên Trưởng khoa Phẫu thuật Tiết niệu – Bệnh viện Đa khoa Xanh Pôn<br>
+                                                    - Ủy viên ban chấp hành Hội Tiết niệu toàn quốc<br>
+                                                    - Phó chủ tịch Hội Tiết niệu phía Bắc<br>
+                                                    - Tổng thư ký Hội Thận học - Tiết niệu Hà Nội
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                        <img src="~/asset/team-2/le-ngoc-thuong-6.jpg" class="thumb-imgs" />
+                                        <div class="text">
+                                            <div class="text__h4">
+                                                Thầy thuốc ưu tú, Bác sĩ CKII
+                                            </div>
+                                            <h3 class="text__title">
+                                                <a href="#" target="_blank">
+                                                    Lê Ngọc Thương
+                                                </a>
+                                            </h3>
+                                            <div class="text__h5">
+                                                Phó Giám đốc Bệnh viện, Phụ trách Ngoại tổng hợp, kiêm Trưởng khoa Ngoại
+                                            </div>
+                                            <div class="text__p">
+                                                <p>
+                                                    Thầy thuốc ưu tú, bác sĩ CKII Lê Ngọc Thương có bề dày kinh nghiệm hơn 30 năm công tác chuyên môn và quản lý trong ngành y tế. Bác sĩ Lê Ngọc Thương tốt nghiệp Đại học Y Hà Nội, chuyên ngành Đa khoa Ngoại - Sản và tốt nghiệp Bác sĩ Chuyên khoa II chuyên ngành Chấn thương chỉnh hình.<br>
+                                                    Bác sĩ CKII Lê Ngọc Thương được giới chuyên môn cũng như đông đảo người bệnh công nhận là chuyên gia giỏi trong lĩnh vực Ngoại khoa, đặc biệt trong mảng Chấn thương chỉnh hình.<br>
+                                                    - Nguyên Trưởng khoa Ngoại, Phó phòng Tổ chức cán bộ, Phó Giám đốc Bệnh viện Bưu điện.&nbsp;<br>
+                                                    - Thành viên hội đồng quản lý, Giám đốc Trung tâm điều dưỡng và chăm sóc sức khỏe ngành Bưu điện.&nbsp;<br>
+                                                    Với các thành tích đạt được cả về chuyên môn và quản lý, bác sĩ Lê Ngọc Thương vinh dự nhận danh hiệu Thầy thuốc ưu tú cùng nhiều bằng khen cao quý.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider slider-nav">
+                                <div>
+                                    <img src="~/asset/image/team/bac-ha1.jpg" class="slider-img-team" />
+                                </div>
+                                <div>
+                                    <img src="~/asset/image/team/BS-Nguyen-Pham-Y-Nhi.jpg" class="slider-img-team" />
+                                </div>
+                                <div>
+                                    <img src="~/asset/image/team/BS-Nguyen-Van-Doanh-300x300.png" class="slider-img-team" />
+                                </div>
+                                <div>
+                                    <img src="~/asset/image/team/BS-Nguyen-Xuan-Thanh-300x300.png" class="slider-img-team" />
+                                </div>
+                                <div>
+                                    <img src="~/asset/image/team/BS-Pham-Huy-Huyen.png" class="slider-img-team" />
+                                </div>
+                                <div>
+                                    <img src="~/asset/image/team/le-ngoc-thuong-300x300.jpg" class="slider-img-team" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="center-card">
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_01.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_02.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_03.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_04.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_05.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_06.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_07.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_08.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_09.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_10.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/infrastructure/home15_3_11.jpg" />
+                    </div>
+                    <div class="card">
+                        <img src="~/asset/image/banner/banner-huong-dan-tai-app-tci-hospital.jpg" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-news">
+        <div class="container-xl">
+            <div class="container">
+                <div class="row">
+                    <h1 class="service-title">ĐỘI NGŨ BÁC SĨ</h1>
+                </div>
+            </div>
+            <div class="container-xl">
+                <div class="row">
+                    <div class="featured-news-left col-7">
+                        <div class="featured-news-left-thumb">
+                            <img src="~/asset/image/new/ngay-hoi-yoga-1.jpg" />
+                        </div>
+                        <div class="texts d-flex flex-lg-wrap flex-column">
+                            <h3 class="text__title">
+                                <a href="#" target="_blank" class="text-dark">
+                                    Hệ thống Y tế Thu Cúc TCI đồng hành cùng ngày hội Yoga, xác lập kỷ lục Việt Nam
+                                </a>
+                            </h3>
+                            <div class="text__info d-flex">
+                                <span>
+                                    <i class="svg__fa-calendar-alt"></i>
+                                    14/08/2023
+                                </span>
+                            </div>
+                            <p>
+                                <span>
+                                    Sự kiện Ngày hội Yoga do Báo điện tử Dân trí phối hợp với nhà tài trợ chính -
+                                    Hệ thống Y tế Thu Cúc TCI - tổ chức vào ngày 12/8 đã xác lập...
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="featured-news-right col-5">
+                        <ul class="d-flex list-inline flex-wrap gap-4">
+                            <li class="d-flex flex-column featured-news-box">
+                                <div class="thumb">
+                                    <a href="#" title="Đặt hẹn đón bé tại TCI: Giảm tới 45% gói sinh + tặng thẻ khám Nhi 2 TRIỆU đồng" target="_blank">
+                                        <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2023/07/1000x1000-300x300.png" 
+                                             width="150" height="150" class="link-img" >
+                                    </a>
+                                </div>
+                                <div class="texts d-flex flex-column">
+                                    <h3 class="text__title featured-news-title">
+                                        <a href="#" class="text-link" target="_blank">
+                                            Đặt hẹn đón bé tại TCI: Giảm tới 45% gói sinh + tặng thẻ khám Nhi 2 TRIỆU đồng
+                                        </a>
+                                    </h3>
+                                    <div class="text__info d-flex">
+                                        <span>
+                                            <i class="svg__fa-calendar-alt"></i>
+                                            01/08/2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex flex-column featured-news-box">
+                                <div class="thumb">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2023/05/IMG_0830-e1687589265276-300x300.jpg" 
+                                             width="150" height="150" class="link-img">
+                                    </a>
+                                </div>
+                                <div class="texts d-flex flex-column">
+                                    <h3 class="text__title featured-news-title">
+                                        <a href="#"  class="text-link" target="_blank">
+                                            Ưu đãi tháng 8/2023 – Nội soi tiêu hóa
+                                        </a>
+                                    </h3>
+                                    <div class="text__info d-flex">
+                                        <span>
+                                            <i class="svg__fa-calendar-alt"></i>
+                                            01/08/2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex flex-column featured-news-box">
+                                <div class="thumb">
+                                    <a href="#" target="_blank">
+                                        <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2023/05/0X5A0111-e1687397135807-300x300.jpg" 
+                                             width="150" height="150" class="link-img">
+                                    </a>
+                                </div>
+                                <div class="texts d-flex flex-column">
+                                    <h3 class="text__title featured-news-title">
+                                        <a href="#"  class="text-link " target="_blank">
+                                            Cơ sở 286 Thụy Khuê – Bùng nổ ưu đãi tháng 8/2023
+                                        </a>
+                                    </h3>
+                                    <div class="text__info d-flex">
+                                        <span>
+                                            <i class="svg__fa-calendar-alt"></i>
+                                            01/08/2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex flex-column featured-news-box">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2022/05/uu-dai-TCI-thang-8-1-300x300.jpg" 
+                                             width="150" height="150"
+                                             class="link-img">
+                                    </a>
+                                </div>
+                                <div class="texts d-flex flex-column">
+                                    <h3 class="text__title featured-news-title">
+                                        <a href="#"  class="text-link" target="_blank">
+                                            Ưu đãi gói khám sức khỏe và tầm soát ung thư tháng 8
+                                        </a>
+                                    </h3>
+                                    <div class="text__info d-flex">
+                                        <span>
+                                            <i class="svg__fa-calendar-alt"></i>
+                                            01/08/2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(function () {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            // centerMode: true,
+            focusOnSelect: true
+        });
+    });
+</script>

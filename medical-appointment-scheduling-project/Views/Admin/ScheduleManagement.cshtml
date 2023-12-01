@@ -1,0 +1,317 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Appointment>
+@{
+    ViewBag.Title = "Quản lý lịch khám";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<h5>Quản lý đặt lịch khám</h5>
+
+<p>
+    @Html.ActionLink("Tạo lịch khám mới", "CreateExaminationSchedules")
+</p>
+@if (ViewBag.Data == null)
+{
+    <p>Không có người đặt lịch khám</p>
+}
+else
+{
+    <div class="mb-3 mt-3">
+        @using (Html.BeginForm("ScheduleManagement", "Admin", FormMethod.Get))
+        {
+            <div class="d-flex justify-content-start">
+                <div class="col-5 d-flex">
+                    <input class="form-control w-75" name="searchString" type="text" placeholder="Tìm kiếm...">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        }
+    </div>
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đang chờ</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Đã xác nhận</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-complete-tab" data-bs-toggle="pill" data-bs-target="#pills-complete" type="button" role="tab" aria-controls="pills-complete" aria-selected="false">Hoàn thành</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrdinalCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Specialization.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Doctor.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookingDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>Tính năng</th>
+                </tr>
+
+                @foreach (var item in ViewBag.Data)
+                {
+
+                    if (item.Status == "0")
+                    {
+                        <tr>
+                            <td>
+                                @item.OrdinalCode
+                            </td>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                            <td>
+                                @item.ClinicAddress
+                            </td>
+                            <td>
+                                @item.Specialization
+                            </td>
+                            <td>
+                                @item.DoctorName
+                            </td>
+                            <td>
+                                @item.BookingDate
+                            </td>
+                            <td>
+                                <span>Chờ xác nhận</span>
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "EditExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Chi tiết", "DetailsExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Xoá", "DeleteExaminationSchedule", new { id = item.Id })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber > 1 ? ViewBag.Data.PageNumber - 1 : (int?)null })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    @for (int i = 1; i <= ViewBag.Data.PageCount; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.Data.PageNumber ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = i })">@i</a>
+                        </li>
+                    }
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber < ViewBag.Data.PageCount ? ViewBag.Data.PageNumber + 1 : (int?)null })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrdinalCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Specialization.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Doctor.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookingDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>Tính năng</th>
+                </tr>
+
+                @foreach (var item in ViewBag.Data)
+                {
+                    if (item.Status == "1")
+                    {
+                        <tr>
+                            <td>
+                                @item.OrdinalCode
+                            </td>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                            <td>
+                                @item.ClinicAddress
+                            </td>
+                            <td>
+                                @item.Specialization
+                            </td>
+                            <td>
+                                @item.DoctorName
+                            </td>
+                            <td>
+                                @item.BookingDate
+                            </td>
+                            <td>
+
+                                <span>Đã xác nhận</span>
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "EditExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Chi tiết", "DetailsExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Xoá", "DeleteExaminationSchedule", new { id = item.Id })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber > 1 ? ViewBag.Data.PageNumber - 1 : (int?)null })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    @for (int i = 1; i <= ViewBag.Data.PageCount; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.Data.PageNumber ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = i })">@i</a>
+                        </li>
+                    }
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber < ViewBag.Data.PageCount ? ViewBag.Data.PageNumber + 1 : (int?)null })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tab-pane fade" id="pills-complete" role="tabpanel" aria-labelledby="pills-complete-tab" tabindex="0">
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrdinalCode)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ClinicAddress.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Specialization.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Doctor.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookingDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th>Tính năng</th>
+                </tr>
+
+                @foreach (var item in ViewBag.Data)
+                {
+                    if (item.Status == "2")
+                    {
+                        <tr>
+                            <td>
+                                @item.OrdinalCode
+                            </td>
+                            <td>
+                                @item.FullName
+                            </td>
+                            <td>
+                                @item.PhoneNumber
+                            </td>
+                            <td>
+                                @item.ClinicAddress
+                            </td>
+                            <td>
+                                @item.Specialization
+                            </td>
+                            <td>
+                                @item.DoctorName
+                            </td>
+                            <td>
+                                @item.BookingDate
+                            </td>
+                            <td>
+                                <span>Hoàn thành</span>
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "EditExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Chi tiết", "DetailsExaminationSchedule", new { id = item.Id }) |
+                                @Html.ActionLink("Xoá", "DeleteExaminationSchedule", new { id = item.Id })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber > 1 ? ViewBag.Data.PageNumber - 1 : (int?)null })" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    @for (int i = 1; i <= ViewBag.Data.PageCount; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.Data.PageNumber ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = i })">@i</a>
+                        </li>
+                    }
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("ScheduleManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber < ViewBag.Data.PageCount ? ViewBag.Data.PageNumber + 1 : (int?)null })" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+}

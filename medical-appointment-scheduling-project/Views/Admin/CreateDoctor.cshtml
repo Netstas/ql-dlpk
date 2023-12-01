@@ -1,0 +1,95 @@
+﻿@model medical_appointment_scheduling_project.Models.Doctor
+
+@{
+    ViewBag.Title = "Thêm bác sĩ mới";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+<div class="mb-5">
+    @Html.ActionLink("Quay lại", "DoctorManagement")
+</div>
+<h5>Tạo tài khoản mới</h5>
+@using (Html.BeginForm("CreateDoctors", "Admin", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.ClinicAddress.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ClinicAddressId,
+                    new SelectList(ViewBag.dbClinicAddresses, "Id", "Address"),
+                    "Chọn địa chỉ phòng khám", new { @class = "form-control", @id = "clinicAddressDropdown" })
+                @Html.ValidationMessageFor(model => model.ClinicAddressId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group mt-3">
+            @Html.LabelFor(model => model.Specialization.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.SpecializationId,
+                    new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name"),
+                    "Chọn chuyên khoa", new { @class = "form-control", @id = "specializationDropdown" })
+                @Html.ValidationMessageFor(model => model.SpecializationId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm mới" class="btn btn-default btn-save" />
+            </div>
+        </div>
+    </div>
+}
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const clinicAddressDropdown = document.getElementById("clinicAddressDropdown");
+        const specializationDropdown = document.getElementById("specializationDropdown");
+
+        clinicAddressDropdown.addEventListener("change", function () {
+            var clinicAddressId = clinicAddressDropdown.value;
+
+            if (clinicAddressId !== "") {
+                axios.get(`/api/GetSpecializations?clinicAddressId=${clinicAddressId}`)
+                    .then(response => {
+                        const data = response.data;
+                        specializationDropdown.innerHTML = "";
+
+                        var defaultOption = document.createElement("option");
+                        defaultOption.value = "";
+                        defaultOption.text = "Chọn chuyên khoa";
+                        specializationDropdown.appendChild(defaultOption);
+
+                        data.forEach(item => {
+                            var option = document.createElement("option");
+                            option.value = item.Id;
+                            option.text = item.Name;
+                            specializationDropdown.appendChild(option);
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Axios error:', error);
+                    });
+            } else {
+                specializationDropdown.innerHTML = ""; 
+            }
+        });
+    });
+</script>

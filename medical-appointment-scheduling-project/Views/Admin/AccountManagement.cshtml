@@ -1,0 +1,104 @@
+﻿@model IEnumerable<medical_appointment_scheduling_project.Models.Admin>
+
+@{
+    ViewBag.Title = "Quản lý tài khoản";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<h4>Quản lý tài khoản</h4>
+@if (ViewBag.Data == null)
+{
+    <p>Chưa có tài khoản</p>
+}
+else
+{
+    <p>
+        @Html.ActionLink("Thêm mới tài khoản", "CreateAccount")
+    </p>
+    <div class="mb-3 mt-3">
+        @using (Html.BeginForm("AccountManagement", "Admin", FormMethod.Get))
+        {
+            <div class="d-flex justify-content-start">
+                <div class="col-5 d-flex">
+                    <input class="form-control w-75" name="searchString" type="text" placeholder="Tìm kiếm...">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+        }
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Decentralization)
+            </th>
+            <th>Tính năng</th>
+        </tr>
+
+        @foreach (var item in ViewBag.Data)
+        {
+            if (item.Decentralization == "0")
+            {
+                <tr>
+                    <td>
+                        @item.Username
+                    </td>
+                    <td>
+                        @item.FullName
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        @item.PhoneNumber
+                    </td>
+                    <td>
+                        <span>Quản trị viên</span>
+                    </td>
+                    <td>
+                        @Html.ActionLink("Sửa", "EditAccount", new { id = item.Id }) |
+                        @Html.ActionLink("Xoá", "DeleteAdmin", new { id = item.Id })
+
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("AccountManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber > 1 ? ViewBag.Data.PageNumber - 1 : (int?)null })" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            @for (int i = 1; i <= ViewBag.Data.PageCount; i++)
+            {
+                <li class="page-item @(i == ViewBag.Data.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("AccountManagement", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("AccountManagement", new { page = ViewBag.Data.PageCount > 1 && ViewBag.Data.PageNumber < ViewBag.Data.PageCount ? ViewBag.Data.PageNumber + 1 : (int?)null })" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+

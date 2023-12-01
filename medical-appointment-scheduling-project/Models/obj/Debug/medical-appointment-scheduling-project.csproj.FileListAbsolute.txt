@@ -1,0 +1,340 @@
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll.config
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.pdb
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe.config
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.rsp
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe.config
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.rsp
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.AppContext.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Collections.Immutable.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Console.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Globalization.Calendars.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Http.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Sockets.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Reflection.Metadata.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.ValueTuple.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe.config
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.rsp
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe.config
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.Web.Infrastructure.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.AssemblyReference.cache
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CoreCompileInputs.cache
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CopyComplete
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.pdb
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll.config
+D:\source\freelance\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.pdb
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csc.exe
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csc.exe.config
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csc.rsp
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csi.exe
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csi.exe.config
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\csi.rsp
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Managed.Core.targets
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.AppContext.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Collections.Immutable.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Console.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Globalization.Calendars.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Net.Http.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Net.Sockets.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Reflection.Metadata.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.ValueTuple.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XmlDocument.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\vbc.exe
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\vbc.exe.config
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\vbc.rsp
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe
+D:\source\freelance\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe.config
+D:\source\freelance\medical-appointment-scheduling-project\bin\AjaxMin.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\EntityFramework.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\HtmlAgilityPack.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\Microsoft.Web.Infrastructure.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Helpers.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Mvc.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Razor.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\WebCompiler.dll
+D:\source\freelance\medical-appointment-scheduling-project\bin\EntityFramework.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\HtmlAgilityPack.pdb
+D:\source\freelance\medical-appointment-scheduling-project\bin\HtmlAgilityPack.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\WebCompiler.pdb
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Razor.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Helpers.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\System.Web.Mvc.xml
+D:\source\freelance\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\source\freelance\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.AssemblyReference.cache
+D:\source\freelance\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CoreCompileInputs.cache
+D:\source\freelance\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CopyComplete
+D:\source\freelance\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.dll
+D:\source\freelance\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.pdb
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\AjaxMin.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.pdb
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.pdb
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.dll
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.xml
+D:\Freelance\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Console.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\AjaxMin.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CopyComplete
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Desktop\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\medical-appointment-scheduling-project.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csc.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\csi.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Console.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\vbc.rsp
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\AjaxMin.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\HtmlAgilityPack.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\PagedList.Mvc.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\WebCompiler.pdb
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Razor.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Webpages.Razor.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Helpers.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\System.Web.Mvc.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.csproj.CopyComplete
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.dll
+C:\Users\ASUS\OneDrive - utt.vn\Documents\OneDrive\Documents\project\medical-appointment-scheduling-project\medical-appointment-scheduling-project\obj\Debug\medical-appointment-scheduling-project.pdb

@@ -1,0 +1,65 @@
+﻿@model medical_appointment_scheduling_project.Models.Appointment
+
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Views/LayoutAdmin/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h4>Thông tin chi tiết</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.OrdinalCode)</dt>
+                <dd class="col-sm-9">@ViewBag.query.OrdinalCode</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.FullName)</dt>
+                <dd class="col-sm-9">@ViewBag.query.FullName</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+                <dd class="col-sm-9">@ViewBag.query.PhoneNumber</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.ClinicAddress.Address)</dt>
+                <dd class="col-sm-9">@ViewBag.query.ClinicAddress</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Specialization.Name)</dt>
+                <dd class="col-sm-9">@ViewBag.query.Specialization</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Doctor.Name)</dt>
+                <dd class="col-sm-9">@ViewBag.query.DoctorName</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Syndrome)</dt>
+                <dd class="col-sm-9">@ViewBag.query.Syndrome</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Status)</dt>
+                @if (ViewBag.query.Status == "0")
+                {
+                    <dd class="col-sm-9">Chờ xác nhận</dd>
+                }
+                else if (ViewBag.query.Status == "1")
+                {
+                    <dd class="col-sm-9">Chờ xác nhận</dd>
+
+                }
+                else if (ViewBag.query.Status == "0")
+                {
+                    <dd class="col-sm-9">Đã hoàn thành</dd>
+                }
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CreatedAt)</dt>
+                <dd class="col-sm-9">@ViewBag.query.CreatedAt</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.BookingDate)</dt>
+                <dd class="col-sm-9">@ViewBag.query.BookingDate</dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <p>
+                @Html.ActionLink("Sửa", "EditExaminationSchedule", new { id = ViewBag.query.Id }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Quay lại", "ScheduleManagement", "Admin", null, new { @class = "btn btn-secondary ml-2" })
+            </p>
+        </div>
+    </div>
+</div>

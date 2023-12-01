@@ -1,0 +1,57 @@
+﻿  <!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="bi bi-grid"></i>
+                @Html.ActionLink("Bảng điều khiển", "Dashboard", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-solid fa-users"></i>
+                @Html.ActionLink(" Quản lý tài khoản", "AccountManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-solid fa-user"></i>
+                @Html.ActionLink(" Quản lý người dùng", "UserManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-solid fa-user"></i>
+                @Html.ActionLink(" Quản lý địa chỉ phòng khám", "ClinicAddressManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-solid fa-user"></i>
+                @Html.ActionLink(" Quản lý chuyên khoa", "SpecializationManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-solid fa-user"></i>
+                @Html.ActionLink(" Quản lý bác sĩ", "DoctorManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-regular fa-calendar-days"></i>
+                @Html.ActionLink(" Quản lý lịch khám", "ScheduleManagement", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link collapsed d-flex">
+                <i class="fa-regular fa-calendar-days"></i>
+                @Html.ActionLink(" Quản lý lịch tư vấn", "Advise", "Admin", null, new { @class = "w-100" })
+            </div>
+        </li>
+    </ul>
+
+</aside>
